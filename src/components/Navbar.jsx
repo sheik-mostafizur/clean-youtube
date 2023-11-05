@@ -28,8 +28,8 @@ const Navbar = ({handleSubmit}) => {
           <form
             onSubmit={handleSubmit}
             className={`${
-              isOpenForm ? "" : "hidden"
-            } w-full md:w-auto grid grid-cols-1 md:grid-cols-4 items-center justify-center md:gap-4`}>
+              isOpenForm ? "" : "hidden md:grid"
+            } w-full md:w-auto grid-cols-1 md:grid-cols-4 items-center justify-center md:gap-4`}>
             <input
               type="text"
               placeholder="Enter Playlist ID"
