@@ -7,7 +7,7 @@ const Navbar = ({handleSubmit}) => {
       <div className="fixed top-0 z-10 w-full bg-primary-100/50 backdrop-blur hover:backdrop-blur-lg shadow">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-4">
           <div className="flex justify-between w-full md:w-auto">
-            <h2 className="font-bold text-2xl md:text-3xl text-primary-950">
+            <h2 className="font-bold text-2xl md:text-3xl text-primary-600">
               CleanYouTube
             </h2>
             <svg
@@ -26,7 +26,7 @@ const Navbar = ({handleSubmit}) => {
             </svg>
           </div>
           <form
-            onSubmit={handleSubmit}
+            onSubmit={(e) => handleSubmit(e)}
             className={`${
               isOpenForm ? "" : "hidden md:grid"
             } w-full md:w-auto grid-cols-1 md:grid-cols-4 items-center justify-center md:gap-4`}>
